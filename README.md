@@ -1,6 +1,6 @@
 # highway_labelling (HL)
 
-This is an implementation of a Highway Labelling (HL) algorithm, which answers shortest-path distance queries over real-world massive complex networks in the order of milliseconds(ms).
+This is an implementation of the Highway Labelling (HL) algorithm, which answers shortest-path distance queries over real-world massive complex networks in the order of milliseconds(ms).
 
 ## Usage
 Given a graph, it first constructs a labelling. Then, using the labelling and a querying framework, it can quickly answer distance between two vertices.
