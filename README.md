@@ -25,5 +25,5 @@ For further information, please see `highway_cover_labelling.h`.
 
 ## References
 
-* Muhammad Farhan, Qing Wang, Yu Lin, and Brendan Mckay, **[A Highly Scalable Labelling Approach for Exact Distance
+* Muhammad Farhan, Qing Wang, Yu Lin, and Brendan McKay, **[A Highly Scalable Labelling Approach for Exact Distance
 Queries in Complex Networks](https://arxiv.org/pdf/1812.02363.pdf)**. Accpeted in EDBT 2019.
