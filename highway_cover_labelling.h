@@ -180,7 +180,7 @@ void HighwayLabelling::ConstructHighwayLabelling(int topk[]) {
     std::queue<int> que[2];
 
     que[0].push(topk[i]); que[0].push(-1);
-    P[topk[i]] = 0; int use = 0;
+    distances[topk[i]][i] = 0; P[topk[i]] = 0; int use = 0;
     while (!que[0].empty()) {
       int u = que[use].front();
       que[use].pop();
@@ -204,8 +204,12 @@ void HighwayLabelling::ConstructHighwayLabelling(int topk[]) {
       }
     }
 
-    for(int j = 0; j < K; j++)
-      highway[i][j] = P[topk[j]];
+    for(int j = 0; j < K; j++) {
+      if(P[topk[j]] != 111) {
+        highway[i][j] = P[topk[j]];
+        highway[j][i] = P[topk[j]];
+      }
+    }
 
     delete [] P;
   }
