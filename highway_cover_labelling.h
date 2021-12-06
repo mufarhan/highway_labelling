@@ -265,8 +265,8 @@ uint8_t HighwayLabelling::QueryDistanceUB_opt(int s, int t) {
     uni2[j1] = j; j++; j1++;
   }
 
-  i = 0; j = 0;
-  while (i < i1) {
+  i = 0;
+  while (i < i1) { j = 0;
     while (j < j1) {
       m = min(m, distances[s][uni1[i]] + highway[vertices[s][uni1[i]]][vertices[t][uni2[j]]] + distances[t][uni2[j]]);
       j++;
