@@ -22,7 +22,7 @@
 
 class HighwayLabelling {
  public:
-  // Constructs labelling from a graph, given as a list of edges.
+  // Constructs labelling for a graph, given as a list of edges.
   HighwayLabelling(const char *filename, int k);
   HighwayLabelling();
   ~HighwayLabelling();
